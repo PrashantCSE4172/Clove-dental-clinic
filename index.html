@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Clove Dental — Landing</title>
   <meta name="description" content="Painless Root Canal Treatment in Delhi — Assignment" />
-  <link rel="icon" href="assets/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -19,7 +18,7 @@
       <nav class="nav" id="nav">
         <ul class="nav__list">
           <li><a href="#treatments">Treatments</a></li>
-          <li><a href="#transformations">Transformations</a></li>
+          <li><a href="#transform">Transformations</a></li>
           <li><a href="#why">Why Us</a></li>
           <li><a href="#safety">Safety</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -29,15 +28,15 @@
       <div class="header__cta">
         <a class="phone" href="tel:+91985658510">985-6589-510</a>
 
-        <button id="navToggle" class="nav-toggle" aria-label="Toggle Menu">
+        <button id="navToggle" class="nav-toggle">
           <span class="hamburger"></span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero" id="hero">
+  <!-- HERO -->
+  <section class="hero">
     <div class="container hero__grid">
 
       <div class="hero__content">
@@ -51,80 +50,63 @@
         </ul>
       </div>
 
-      <aside class="hero__image-container">
-        <img src="assets/hero.png" alt="Dentist smiling at clinic" class="hero-img" loading="lazy">
-      </aside>
+      <img src="assets/hero.png" alt="Dentist" class="hero-img" />
 
-      <aside class="hero__form" aria-labelledby="bookHeading">
-        <h2 id="bookHeading">Book Appointment</h2>
-
-        <form class="form" onsubmit="return false;">
-          <label>
-            <input type="text" placeholder="Name" required />
-          </label>
-
-          <label>
-            <input type="tel" placeholder="Mobile Number" required />
-          </label>
-
-          <label>
-            <input type="text" placeholder="Captcha 1514" />
-          </label>
+      <aside class="hero__form">
+        <h2>Book Appointment</h2>
+        <form onsubmit="return false;">
+          <input type="text" placeholder="Name" required />
+          <input type="tel" placeholder="Mobile Number" required />
+          <input type="text" placeholder="Captcha 1514" />
 
           <label class="checkbox">
             <input type="checkbox" checked />
             I agree to Terms and Privacy Policy
           </label>
 
-          <button class="btn btn--primary" type="submit">Book a Free Consultation</button>
+          <button type="submit" class="btn btn--primary">Book a Free Consultation</button>
         </form>
       </aside>
 
     </div>
   </section>
 
-  <!-- TREATMENTS SECTION -->
-  <section class="treatments container" id="treatments">
+  <!-- TREATMENTS -->
+  <section class="container treatments" id="treatments">
     <h2 class="section-title">Types of Root Canal Treatments</h2>
-    <p class="section-sub">
-      In a root canal, the dentist removes infected pulp, cleans the tooth, and fills it with special material.
-    </p>
+    <p class="section-sub">In a root canal, the dentist removes infected pulp, cleans the tooth, and fills it with special material.</p>
 
-    <div class="cards grid-2">
+    <div class="grid-2">
 
       <article class="card">
-        <img src="assets/treatment-1.png" alt="Root canal treatment illustration" loading="lazy" />
+        <img src="assets/treatment-1.png" alt="Treatment">
         <div class="card__body">
           <h3>Root Canal Treatment</h3>
           <p>Ideal for infected or damaged tooth.</p>
-
-          <ul class="list-small">
+          <ul>
             <li>Split RCT</li>
             <li>Split RCT with rubber dam</li>
             <li>Split RCT with laser</li>
           </ul>
-
           <div class="card__footer">
-            <span class="price">Starting Price <strong>₹19,999</strong></span>
+            <span>Starting Price <strong>₹19,999</strong></span>
             <a class="btn" href="#">Get Free Consultation</a>
           </div>
         </div>
       </article>
 
       <article class="card">
-        <img src="assets/treatment-2.png" alt="Re-root canal illustration" loading="lazy" />
+        <img src="assets/treatment-2.png" alt="Treatment">
         <div class="card__body">
           <h3>Re-Root Canal Treatment</h3>
-          <p>For persistent or recurring issues after initial RCT.</p>
-
-          <ul class="list-small">
+          <p>For persistent issues after initial RCT.</p>
+          <ul>
             <li>Re-RCT with rubber dam</li>
             <li>Re-RCT laser specialist</li>
             <li>Re-RCT with retrieval of old filling</li>
           </ul>
-
           <div class="card__footer">
-            <span class="price">Starting Price <strong>₹19,999</strong></span>
+            <span>Starting Price <strong>₹19,999</strong></span>
             <a class="btn" href="#">Get Free Consultation</a>
           </div>
         </div>
@@ -133,126 +115,106 @@
     </div>
   </section>
 
-  <!-- TRANSFORMATIONS SECTION -->
-  <section class="transformations container" id="transformations">
+  <!-- TRANSFORMATIONS -->
+  <section class="container transformations" id="transform">
     <h2 class="section-title">Real Smiles, Real Transformations</h2>
+    <p class="section-sub">See the life-changing results our dental implant patients enjoy</p>
 
     <div class="transform__list">
 
       <figure class="transform__item">
-        <img src="assets/patient-1.png" alt="Arjun Mehta" loading="lazy" />
-        <figcaption>Arjun Mehta — Mumbai</figcaption>
+        <img src="assets/patient-1.png" alt="Patient">
+        <figcaption>Arjun Mehta — <span>Mumbai</span></figcaption>
       </figure>
 
       <figure class="transform__item">
-        <img src="assets/patient-2.png" alt="Kavita Sharma" loading="lazy" />
-        <figcaption>Kavita Sharma — Bangalore</figcaption>
+        <img src="assets/patient-2.png" alt="Patient">
+        <figcaption>Kavita Sharma — <span>Bangalore</span></figcaption>
       </figure>
 
       <figure class="transform__item">
-        <img src="assets/patient-3.png" alt="Neha Joshi" loading="lazy" />
-        <figcaption>Neha Joshi — Delhi</figcaption>
+        <img src="assets/patient-3.png" alt="Patient">
+        <figcaption>Neha Joshi — <span>Delhi</span></figcaption>
       </figure>
 
       <figure class="transform__item">
-        <img src="assets/patient-4.png" alt="Viram Desai" loading="lazy" />
-        <figcaption>Viram Desai — Chennai</figcaption>
+        <img src="assets/patient-4.png" alt="Patient">
+        <figcaption>Viram Desai — <span>Chennai</span></figcaption>
       </figure>
 
     </div>
   </section>
 
-  <!-- WHY CHOOSE US -->
-  <section class="why container" id="why">
+  <!-- WHY US -->
+  <section class="container why" id="why">
     <h2 class="section-title">Why Choose Clove Dental</h2>
 
     <div class="why__grid">
       <ul class="why__list">
-        <li>DORI - A.I. enabled Dental chair</li>
-        <li>10x Safety and 4 steps sterilization process</li>
-        <li>Experienced and Certified implantologist</li>
-        <li>Updated with world class equipment</li>
-        <li>Regular audits for safety protocols</li>
+        <li>DORI - AI enabled Dentalcare</li>
+        <li>10x Safety & sterilization</li>
+        <li>Certified Implantologists</li>
+        <li>Modern equipment & technology</li>
+        <li>Regular safety audits</li>
       </ul>
 
       <div class="why__image">
-        <img src="assets/why-us.png" alt="Clove dental clinic" loading="lazy">
+        <img src="assets/why-us.png" alt="">
       </div>
     </div>
   </section>
 
-  <!-- SAFETY SECTION -->
-  <section class="safety container" id="safety">
+  <!-- SAFETY -->
+  <section class="container safety" id="safety">
     <h2 class="section-title">Safety, Precision, and Innovation</h2>
 
     <div class="grid-3">
-
       <div class="feature-card">
         <h3>Uncompromised Safety</h3>
         <p>10X Safety Protocols for a secure and worry-free dental experience.</p>
-        <a href="#" class="learn">Learn More</a>
       </div>
 
       <div class="feature-card">
         <h3>Assuring Cleanliness</h3>
-        <p>Rigid 4-Step Sterilization process, assuring a safe and spotless clinic.</p>
-        <a href="#" class="learn">Learn More</a>
+        <p>Rigid 4-Step Sterilization process.</p>
       </div>
 
       <div class="feature-card">
         <h3>Experience AIPS</h3>
-        <p>AI-Powered Sterilization (AIPS) Monitoring system from DORI, USA.</p>
-        <a href="#" class="learn">Learn More</a>
+        <p>AI-Powered Sterilization Monitoring system.</p>
       </div>
-
     </div>
   </section>
 
-  <!-- FAQ SECTION -->
-  <section class="faq container" id="faq">
+  <!-- FAQ -->
+  <section class="container faq" id="faq">
     <h2 class="section-title">Frequently Asked Questions</h2>
 
-    <div class="faq__list" id="faqList">
-
+    <div class="faq__list">
       <div class="faq__item">
-        <button class="faq__q" aria-expanded="false">
-          Can I choose the dentist on my own for treatment?
-        </button>
-        <div class="faq__a" hidden>
-          <p>Yes — subject to availability.</p>
-        </div>
+        <button class="faq__q" aria-expanded="false">Can I choose the dentist?</button>
+        <div class="faq__a" hidden><p>Yes — based on availability.</p></div>
       </div>
 
       <div class="faq__item">
-        <button class="faq__q" aria-expanded="false">
-          Will I get the same doctor each time I visit the same clinic?
-        </button>
-        <div class="faq__a" hidden>
-          <p>We try to maintain continuity whenever possible.</p>
-        </div>
+        <button class="faq__q" aria-expanded="false">Will I get the same doctor?</button>
+        <div class="faq__a" hidden><p>We try to maintain continuity.</p></div>
       </div>
 
       <div class="faq__item">
-        <button class="faq__q" aria-expanded="false">
-          How can I book an appointment?
-        </button>
-        <div class="faq__a" hidden>
-          <p>You can use the form above or call our helpline.</p>
-        </div>
+        <button class="faq__q" aria-expanded="false">How to book an appointment?</button>
+        <div class="faq__a" hidden><p>Use the form above or call.</p></div>
       </div>
-
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer__inner">
-      <div>© 2024 Clove Dental — All rights reserved</div>
-
+      <div>© 2024 Clove Dental</div>
       <nav class="footer-nav">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of service</a>
-        <a href="#">Accessibility</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
       </nav>
     </div>
   </footer>
