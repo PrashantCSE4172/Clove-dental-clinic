@@ -341,8 +341,13 @@ img { display: block; width: 100%; }
   .nav__list { display: none; }
   .nav-toggle { display: block; }
 
+  .grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+  
   /* 1 per row on mobile */
   .transform__list {
     grid-template-columns: 1fr;
   }
 }
+
