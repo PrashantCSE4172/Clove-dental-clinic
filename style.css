@@ -177,48 +177,61 @@ img { display: block; width: 100%; }
   background: #fff;
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  gap: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  height: 100%;
 }
 
-/* FIXED IMAGE SIZE */
+/* FIXED TREATMENT IMAGES */
 .card img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
 
+/* FIXED CARD BODY */
 .card__body {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 6px;
 }
+
 .card__footer {
   display: flex;
   justify-content: space-between;
   margin-top: 12px;
 }
 
-/* TRANSFORMATIONS — FIXED GRID */
+/* FIXED — TRANSFORMATION IMAGES */
 .transform__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-top: 16px;
+  gap: 24px;
+  margin-top: 24px;
 }
 .transform__item {
   text-align: center;
 }
 .transform__item img {
+  width: 100%;
   max-width: 160px;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 10px;
-  margin: 0 auto 6px;
+  border-radius: 12px;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.transform__item figcaption {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
 }
 
 /* WHY US — FIXED */
