@@ -207,31 +207,52 @@ img { display: block; width: 100%; }
   margin-top: 12px;
 }
 
-/* FIXED — TRANSFORMATION IMAGES */
+/* FIXED — TRANSFORMATION SECTION */
+.transformations {
+  margin-top: 40px;
+}
+.transformations p {
+  text-align: center;
+  color: #666;
+  margin-top: -5px;
+}
+
+/* FIGMA-PERFECT GRID */
 .transform__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 24px;
+  gap: 40px;
+  justify-items: center;
+  margin-top: 32px;
 }
+
+/* PERSON CARD */
 .transform__item {
   text-align: center;
 }
+
+/* FIXED — IMAGE SIZE EXACTLY LIKE FIGMA */
 .transform__item img {
-  width: 100%;
-  max-width: 160px;
-  height: 180px;
+  width: 210px;
+  height: 210px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 16px;
   margin: 0 auto 10px;
   display: block;
+  background: #eee;
 }
 
+/* CAPTIONS */
 .transform__item figcaption {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   color: #333;
-  white-space: nowrap;
+}
+
+/* CITY NAME IN ORANGE */
+.transform__item figcaption span {
+  color: #f08f5f;
+  font-weight: 700;
 }
 
 /* WHY US — FIXED */
