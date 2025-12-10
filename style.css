@@ -54,6 +54,7 @@ img { display: block; width: 100%; }
   font-weight: 600;
   border-radius: 6px;
 }
+
 .nav-toggle { display: none; background: transparent; border: none; cursor: pointer; }
 .hamburger {
   width: 22px;
@@ -207,42 +208,49 @@ img { display: block; width: 100%; }
   margin-top: 12px;
 }
 
-/* FIXED — TRANSFORMATION SECTION */
+/* ----------------------------- */
+/* ⭐ FINAL FIX — TRANSFORMATIONS */
+/* ----------------------------- */
+
 .transformations {
   margin-top: 40px;
 }
+
 .transformations p {
   text-align: center;
   color: #666;
   margin-top: -5px;
 }
 
-/* FIGMA-PERFECT GRID */
+/* ⭐ PERFECT FIGMA SPACING */
 .transform__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  justify-items: center;
-  margin-top: 32px;
+  column-gap: 60px;     /* Equal spacing between patients */
+  row-gap: 40px;        /* Vertical spacing */
+  justify-content: center;
+  max-width: 950px;     /* Controls overall width like Figma */
+  margin: 32px auto 0;
 }
 
-/* PERSON CARD */
+/* PATIENT CARD */
 .transform__item {
   text-align: center;
+  padding: 0 8px;
 }
 
-/* FIXED — IMAGE SIZE EXACTLY LIKE FIGMA */
+/* ⭐ FIX — SHOW FULL IMAGE, NO CROPPING, PERFECT FIT */
 .transform__item img {
   width: 210px;
   height: 210px;
-  object-fit: cover;
+  object-fit: contain;  /* Prevents cropping */
   border-radius: 16px;
+  background: #f5f5f5;
+  padding: 6px;         /* Internal spacing around image */
   margin: 0 auto 10px;
-  display: block;
-  background: #eee;
 }
 
-/* CAPTIONS */
+/* CAPTION */
 .transform__item figcaption {
   font-size: 16px;
   font-weight: 600;
@@ -316,6 +324,8 @@ img { display: block; width: 100%; }
   }
   .transform__list {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    column-gap: 30px;
   }
 }
 
